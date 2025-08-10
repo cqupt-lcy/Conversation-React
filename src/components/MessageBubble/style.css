@@ -1,0 +1,66 @@
+.message-bubble {
+  display: flex;
+  margin: 4px 0;
+}
+
+.message-bubble.customer {
+  justify-content: flex-start;
+}
+
+.message-bubble.agent {
+  justify-content: flex-end;
+}
+
+.message-bubble__content {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.message-bubble.customer .message-bubble__content {
+  background: #f1f3f4;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+.message-bubble.agent .message-bubble__content {
+  background: #007bff;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message-text {
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.message-time {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.message-status {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.message-status.sent {
+  color: #999;
+}
+
+.message-status.delivered {
+  color: #007bff;
+}
+
+.message-status.read {
+  color: #007bff;
+}
